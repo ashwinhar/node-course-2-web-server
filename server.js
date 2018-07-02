@@ -63,6 +63,13 @@ app.get('/maintenance', (req, res) =>{
   }) ;         //new page
 });
 
+app.get('/projects', (req, res) =>{
+  res.render('projects.hbs', {
+      pageTitle: 'Projects',
+      paragraph: 'Portfolio page here'
+  }) ;         //new page
+});
+
 app.get('/bad', (req, res) =>{
     res.send({
       errorMessage: 'Unable to fulfill request.'
